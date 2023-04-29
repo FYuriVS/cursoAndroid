@@ -29,12 +29,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_primeiro_nome"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
     <EditText
         android:id="@+id/editNomeCurso"
@@ -43,12 +43,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_nome_do_curso"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSobrenome"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
 
 
     <EditText
@@ -58,12 +58,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_telefone_contato"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeCurso"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCurso" />
 
     <EditText
         android:id="@+id/editSobrenome"
@@ -72,12 +72,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_sobrenome"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
 
 
     <Button
@@ -102,8 +102,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefoneContato"
-        app:layout_constraintVertical_bias="0.94"
-        />
+        app:layout_constraintVertical_bias="0.94" />
 
     <Button
         android:id="@+id/btnFinalizar"
