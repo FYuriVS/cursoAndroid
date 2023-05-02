@@ -39,16 +39,15 @@ public class MainActivity extends AppCompatActivity {
         preferences = getSharedPreferences(NOME_PREFERENCES, 0);
         SharedPreferences.Editor listaVip = preferences.edit();
 
-        pessoa = new Pessoa();
-
         PessoaController controller = new PessoaController();
         controller.toString();
 
-        outraPessoa = new Pessoa();
-        outraPessoa.setPrimeiroNome("Yago");
-        outraPessoa.setSobrenome("Vital");
-        outraPessoa.setCursoDesejado("Java");
-        outraPessoa.setTelefoneContato("85989444444");
+        pessoa = new Pessoa();
+
+        pessoa.setPrimeiroNome(preferences.getString("primeiroNome", ""));
+        pessoa.setSobrenome(preferences.getString("sobrenome", ""));
+        pessoa.setCursoDesejado(preferences.getString("nomeCurso", ""));
+        pessoa.setTelefoneContato(preferences.getString("telefoneContato", ""));
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobrenome = findViewById(R.id.editSobrenome);
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.i("POOAndroid", pessoa.toString());
-        Log.i("POOAndroid", outraPessoa.toString());
+
     }
 
 }
